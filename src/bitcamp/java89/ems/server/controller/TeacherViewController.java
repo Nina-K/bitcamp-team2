@@ -24,7 +24,7 @@ public class TeacherViewController implements Command {
         out.printf("저서: %s\n", teacher.getBook());
         out.printf("학력: %s\n", teacher.getSchool());
         out.printf("강의평가: %s\n", teacher.getAppraisal());
-        out.printf("웹사이트: %s\n", teacher.getWebSite());
+        out.printf("웹사이트: %s\n", teacher.getWebsite());
         out.printf("수상내역: %s\n", teacher.getPrize());
       }
     }

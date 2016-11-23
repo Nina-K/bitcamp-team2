@@ -13,7 +13,7 @@ public class Teacher implements Serializable {
   protected String book;
   protected String school;
   protected String appraisal;
-  protected String webSite;
+  protected String website;
   protected String prize;
 
 
@@ -81,12 +81,12 @@ public class Teacher implements Serializable {
     this.appraisal = appraisal;
   }
 
-  public String getWebSite() {
-    return webSite;
+  public String getWebsite() {
+    return website;
   }
 
-  public void setWebSite(String webSite) {
-    this.webSite = webSite;
+  public void setWebsite(String website) {
+    this.website = website;
   }
 
   public String getPrize() {
@@ -100,7 +100,7 @@ public class Teacher implements Serializable {
   @Override
   public String toString() {
     return "Teacher [name=" + name + ", lectureName=" + lectureName + ", jobCareer=" + jobCareer + ", lectureCareer="
-        + lectureCareer + ", book=" + book + ", school=" + school + ", appraisal=" + appraisal + ", webSite=" + webSite
+        + lectureCareer + ", book=" + book + ", school=" + school + ", appraisal=" + appraisal + ", website=" + website
         + ", prize=" + prize + "]";
   }
   

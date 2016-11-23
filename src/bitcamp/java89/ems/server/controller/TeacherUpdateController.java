@@ -28,7 +28,7 @@ public class TeacherUpdateController implements Command {
     teacher.setBook(paramMap.get("book"));
     teacher.setSchool(paramMap.get("school"));
     teacher.setAppraisal(paramMap.get("appraisal"));
-    teacher.setWebSite(paramMap.get("webSite"));
+    teacher.setWebsite(paramMap.get("website"));
     teacher.setPrize(paramMap.get("prize"));
     
     teacherDao.update(teacher);

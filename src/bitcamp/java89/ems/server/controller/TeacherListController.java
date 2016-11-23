@@ -16,7 +16,7 @@ public class TeacherListController implements Command {
   
   public void service(HashMap<String, String> paramMap, PrintStream out) {
     for (Teacher teacher : teacherDao.getList()) {
-      out.printf("%s,%s,%s,%s\n",
+      out.printf("%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
           teacher.getName(),
           teacher.getLectureName(),
           teacher.getJobCareer(),
@@ -24,7 +24,7 @@ public class TeacherListController implements Command {
           teacher.getBook(),
           teacher.getSchool(),
           teacher.getAppraisal(),
-          teacher.getWebSite(),
+          teacher.getWebsite(),
           teacher.getPrize());
     }
   }

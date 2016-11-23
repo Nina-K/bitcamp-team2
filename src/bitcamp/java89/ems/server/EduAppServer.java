@@ -35,7 +35,7 @@ public class EduAppServer {
     commandMap.put("teacher/delete", new TeacherDeleteController());
   }
   //contact/add?name=1&position=2&tel=3&email=4
-  //teacher/add?name=1&lectureName=2&jobCareer=3&lectureCareer=5&book=4&school=66&appraisal=5&webSite=7&prize=3
+  //teacher/add?name=1&lectureName=2&jobCareer=3&lectureCareer=5&book=4&school=66&appraisal=5&website=7&prize=3
   
   
   private void service() throws Exception {
