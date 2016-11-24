@@ -43,7 +43,6 @@ public class ContactDao {
         } catch (EOFException e) {
 
         } catch (Exception e) {
-          e.printStackTrace();
           System.out.println("데이터 로딩 중 오류 발생!");
           list = new ArrayList<>();
           }

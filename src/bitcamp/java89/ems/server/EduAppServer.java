@@ -13,6 +13,11 @@ import bitcamp.java89.ems.server.controller.ContactDeleteController;
 import bitcamp.java89.ems.server.controller.ContactListController;
 import bitcamp.java89.ems.server.controller.ContactUpdateController;
 import bitcamp.java89.ems.server.controller.ContactViewController;
+import bitcamp.java89.ems.server.controller.CurriculumAddController;
+import bitcamp.java89.ems.server.controller.CurriculumDeleteController;
+import bitcamp.java89.ems.server.controller.CurriculumListController;
+import bitcamp.java89.ems.server.controller.CurriculumUpdateController;
+import bitcamp.java89.ems.server.controller.CurriculumViewController;
 import bitcamp.java89.ems.server.controller.TeacherAddController;
 import bitcamp.java89.ems.server.controller.TeacherDeleteController;
 import bitcamp.java89.ems.server.controller.TeacherListController;
@@ -42,6 +47,12 @@ public class EduAppServer {
     commandMap.put("classroom/add", new ClassroomAddController());
     commandMap.put("classroom/delete", new ClassroomDeleteController());
     commandMap.put("classroom/update", new ClassroomUpdateController());
+    
+    commandMap.put("curriculum/add", new CurriculumAddController()); 
+    commandMap.put("curriculum/list", new CurriculumListController()); 
+    commandMap.put("curriculum/view", new CurriculumViewController()); 
+    commandMap.put("curriculum/update", new CurriculumUpdateController()); 
+    commandMap.put("curriculum/delete", new CurriculumDeleteController()); 
   }
   //contact/add?name=1&position=2&tel=3&email=4
   //teacher/add?name=1&lectureName=2&jobCareer=3&lectureCareer=5&book=4&school=66&appraisal=5&website=7&prize=3
