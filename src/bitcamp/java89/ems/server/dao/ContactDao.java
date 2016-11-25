@@ -14,6 +14,7 @@ public class ContactDao extends AbstractDao<Contact> {
     }
     return obj;
   }
+
   
   private ContactDao() throws Exception { //이 생성자를 호출한 건 getInstrance()
     super("contact-v1.9.data");
