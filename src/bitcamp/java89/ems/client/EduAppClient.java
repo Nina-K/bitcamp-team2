@@ -34,8 +34,10 @@ public class EduAppClient {
         String command = keyScan.nextLine();
         out.println(command);
         
+        if (command.toLowerCase().equals("quit")) { //사용자가 quit 입력해야 나간다.
           break;
          } 
+       } 
     } catch (Exception e) {
       e.printStackTrace();
       
